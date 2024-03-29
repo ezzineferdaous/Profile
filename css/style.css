@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  /* background-color: #000; */
   font-size: small;
  
 
@@ -21,7 +20,6 @@ header {
 }
 .main {
   flex: 1;
-  /* background-color: #000; */
   padding: -53px;
   margin-left: 486px;
   margin-top: -31px;
@@ -38,17 +36,15 @@ section{
 }
 .sidebar{
   width: 19%;
-    /* background: #000; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* padding: 5px 0 20PX 0; */
-    position: fixed;
-    top: 0;
-    left: -24px;
-    height: 100%; 
-    overflow-y: auto;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: -24px;
+  height: 100%; 
+  overflow-y: auto;
+  cursor: pointer;
 
 }
 .aigram h1{
@@ -106,7 +102,7 @@ height: auto;
   margin-right: 34px;
 }
 
-/* contenu */
+/* main*/
 
 svg{
   color:#cdcccc;
@@ -122,7 +118,6 @@ svg{
   border-radius: 50%;
   width: 110px;
   height: 110px;
-
   margin-top: 15px;
 }
 #img{
@@ -131,11 +126,11 @@ svg{
   height: 20px;
 
 }
+
 .row{
   display: inline-flex;
-
- 
 }
+
 #name{
 
   font-size: 15px;
@@ -221,10 +216,7 @@ button:hover {
   align-items: center;
   margin-left: -283px;
   margin-top: 34PX;
-  background: revert;
- 
   
-
 }
 
 .new {
@@ -248,7 +240,7 @@ button:hover {
   left: 41%;
   width: 36px;
   color: rgb(61, 61, 61);
-  transform: translate(-50%, -66%);
+  transform: translate(-50%, -66%);/* La translatepropriété définit les coordonnées x et y  */
   background-color: transparent;
 }
 #p{
@@ -257,6 +249,7 @@ button:hover {
   margin-left: -442px;
 
 }
+
 /* tags */
 .tags ul{
   font-family: "Open Sans", Arial, sans-serif;
@@ -313,19 +306,22 @@ margin-top: -90px;
 }
 
 
+
 /* .grid */
+
+
 .grid-container {
   margin-top: 400px;
   margin-left: -850px;
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 5px;
+  grid-template-columns: auto auto auto; /* nombre de colonnes */
+  grid-gap: 5px;/* espacement entre les éléments */
   background-color: #000;
   padding: 5px;
   width: 400px; 
 }
 
-.grid-container > div {
+.grid-container > div {/* cible les éléments div enfants */
   text-align: center;
   padding: 2px;
   font-size: 30px;
@@ -338,6 +334,9 @@ margin-top: -90px;
   height: 100%; 
   object-fit: cover;
 }
+
+
+
 
 /* footer */
 footer p{
